@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangesh Jadhav - B.A. LL.B. Student</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 2px solid #0ea5e9; /* Sky-500 */
+            padding-bottom: 0.5rem;
+        }
+        .skill-badge {
+            transition: transform 0.2s ease-in-out;
+        }
+        .skill-badge:hover {
+            transform: translateY(-3px);
+        }
+        .highlight {
+            background-color: #A7F3D0; /* A light emerald color */
+            padding: 0.1em 0.4em;
+            border-radius: 0.3rem;
+            font-weight: 600;
+            color: #065F46; /* A dark emerald color */
+        }
+        .typing-cursor {
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from, to { color: transparent }
+            50% { color: inherit; }
+        }
+        /* New animations for a more dynamic intro */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .animate-on-load {
+            opacity: 0; /* Start hidden */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-sky-600">Mangesh Jadhav</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-sky-600 transition duration-300">About</a>
+                <a href="#education" class="text-gray-600 hover:text-sky-600 transition duration-300">Education</a>
+                <a href="#skills" class="text-gray-600 hover:text-sky-600 transition duration-300">Skills</a>
+                <a href="#contact" class="text-gray-600 hover:text-sky-600 transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl text-sky-600"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-sky-600">About</a>
+            <a href="#education" class="block py-2 text-gray-600 hover:text-sky-600">Education</a>
+            <a href="#skills" class="block py-2 text-gray-600 hover:text-sky-600">Skills</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-sky-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center text-center md:text-left mb-16">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 id="hero-h1" class="animate-on-load text-4xl md:text-5xl font-bold text-gray-900 mb-2">Mangesh Jadhav</h1>
+                <div id="animated-typing-container" class="animate-on-load text-2xl text-sky-600 font-semibold mb-4 h-8"></div>
+                <p id="hero-p" class="animate-on-load text-lg text-gray-600 mb-6 max-w-lg mx-auto md:mx-0">
+                    A dedicated and aspiring legal professional with a passion for justice, constitutional law, and human rights.
+                </p>
+                <a href="#contact" id="hero-button" class="animate-on-load bg-sky-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-sky-700 transition duration-300">
+                    Get In Touch
+                </a>
+            </div>
+            <div id="hero-img" class="animate-on-load md:w-1/2 flex justify-center">
+                <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=M.J." alt="Mangesh Jadhav" class="rounded-full shadow-lg w-64 h-64 md:w-80 md:h-80 object-cover">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white rounded-lg shadow-md p-8 mb-16">
+            <h2 class="section-title text-3xl font-bold mb-8 text-center">About Me</h2>
+            <p class="text-gray-700 text-center max-w-3xl mx-auto leading-relaxed">
+                As a motivated first-year B.A. LL.B. student, I am building a strong academic foundation and developing a keen interest in the practical application of law. I am passionate about understanding the core principles of justice and the Indian legal system. I am eager to learn, grow, and contribute my developing skills in a challenging legal environment.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16">
+            <h2 class="section-title text-3xl font-bold mb-8 text-center">Education</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-sky-500">
+                    <h3 class="text-xl font-semibold text-gray-900">Bachelor of Arts and Bachelor of Laws (B.A. LL.B.)</h3>
+                    <p class="text-gray-600 mt-1 font-bold">Savitribai Phule Pune University, (Pune,Maharastra)</p>
+                    <p class="text-gray-500 text-sm mt-1">2025 - Present</p>
+                    <p class="text-gray-700 mt-3">
+                        Currently in the first year of a comprehensive five-year integrated law program, building a strong foundation in core legal principles and the Indian legal system.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-white rounded-lg shadow-md p-8 mb-16">
+            <h2 class="section-title text-3xl font-bold mb-8 text-center">Professional Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                <span class="skill-badge bg-sky-100 text-sky-800 text-md font-medium px-4 py-2 rounded-full shadow-sm">Legal Research</span>
+                <span class="skill-badge bg-sky-100 text-sky-800 text-md font-medium px-4 py-2 rounded-full shadow-sm">Legal Drafting</span>
+                <span class="skill-badge bg-sky-100 text-sky-800 text-md font-medium px-4 py-2 rounded-full shadow-sm">Case Analysis</span>
+                <span class="skill-badge bg-sky-100 text-sky-800 text-md font-medium px-4 py-2 rounded-full shadow-sm">Public Speaking</span>
+                <span class="skill-badge bg-sky-100 text-sky-800 text-md font-medium px-4 py-2 rounded-full shadow-sm">Communication</span>
+                <span class="skill-badge bg-sky-100 text-sky-800 text-md font-medium px-4 py-2 rounded-full shadow-sm">Critical Thinking</span>
+                <span class="skill-badge bg-sky-100 text-sky-800 text-md font-medium px-4 py-2 rounded-full shadow-sm">Moot Court</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16">
+             <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl font-bold mb-12 text-center">Get In Touch</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 bg-white p-8 rounded-lg shadow-2xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Leave a Message</h3>
+                        <div class="bg-gray-100 p-6 rounded-lg text-center h-full flex flex-col justify-center">
+                            <p class="text-gray-700 mb-4">I'd love to hear from you! Please click the button below to open my Google Form and send me a message directly.</p>
+                            <a href="https://docs.google.com/forms/your-form-url" target="_blank" rel="noopener noreferrer" class="inline-block w-full bg-sky-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-sky-700 transition duration-300">
+                                Open Google Form
+                            </a>
+                            <p class="text-xs text-gray-500 mt-3">Note: You will be redirected to Google Forms. Please replace the link with your actual form URL.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6 flex flex-col justify-center">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-gray-900">Contact Information</h3>
+                            <p class="text-gray-600">I'm always open to discussing new projects, research collaborations, or creative ideas. Feel free to reach out.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jadhavmangesh2024@gmail.com" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-lg text-gray-700 hover:text-sky-600">
+                                <i class="fas fa-envelope w-6 text-center"></i>
+                                <span>jadhavmangesh2024@gmail.com</span>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-lg text-gray-700 hover:text-sky-600">
+                                <i class="fab fa-linkedin w-6 text-center"></i>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                            <a href="https://www.instagram.com/mangeshjadhav.hi" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-lg text-gray-700 hover:text-sky-600">
+                                <i class="fab fa-instagram w-6 text-center"></i>
+                                <span>Follow on Instagram</span>
+                            </a>
+                            <a href="https://twitter.com/mangeshjad_hi" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-lg text-gray-700 hover:text-sky-600">
+                                <i class="fab fa-twitter w-6 text-center"></i>
+                                <span>Follow on Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Mangesh Jadhav. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- NEW Intro Animation Logic ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroH1 = document.getElementById('hero-h1');
+            const typingContainer = document.getElementById('animated-typing-container');
+            const heroP = document.getElementById('hero-p');
+            const heroButton = document.getElementById('hero-button');
+            const heroImg = document.getElementById('hero-img');
+
+            heroH1.style.animation = `fadeInUp 0.6s 0.1s ease-out forwards`;
+            typingContainer.style.animation = `fadeInUp 0.6s 0.2s ease-out forwards`;
+            heroP.style.animation = `fadeInUp 0.6s 0.3s ease-out forwards`;
+            heroButton.style.animation = `fadeInUp 0.6s 0.4s ease-out forwards`;
+            heroImg.style.animation = `fadeIn 0.8s 0.5s ease-out forwards`;
+            
+            // Start typing effect after the intro animation has begun
+            setTimeout(handleTyping, 600);
+        });
+
+        // Animated typing effect
+        const typingContainer = document.getElementById('animated-typing-container');
+        const titles = ["B.A. LL.B. Student", "Legal Enthusiast", "Future Advocate"];
+        let titleIndex = 0;
+        let textIndex = 0;
+        let isDeleting = false;
+
+        function handleTyping() {
+            const currentTitle = titles[titleIndex];
+            let displayText = '';
+
+            if (isDeleting) {
+                displayText = currentTitle.substring(0, textIndex - 1);
+                textIndex--;
+            } else {
+                displayText = currentTitle.substring(0, textIndex + 1);
+                textIndex++;
+            }
+
+            typingContainer.innerHTML = `${displayText}<span class="typing-cursor">|</span>`;
+
+            let typingSpeed = isDeleting ? 100 : 150;
+
+            if (!isDeleting && textIndex === currentTitle.length) {
+                typingSpeed = 2000; // Pause at the end of the word
+                isDeleting = true;
+            } else if (isDeleting && textIndex === 0) {
+                isDeleting = false;
+                titleIndex = (titleIndex + 1) % titles.length;
+                typingSpeed = 500; // Pause before starting new word
+            }
+
+            setTimeout(handleTyping, typingSpeed);
+        }
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                
+                // --- FIX ---
+                // Only prevent default and scroll if the href is not just "#"
+                if (href && href.length > 1) {
+                    e.preventDefault();
+
+                    // Close mobile menu on click
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
